@@ -12,12 +12,44 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  /* 2つの要素の間隔（space-between）を等間隔 */
+  justify-content: space-between;
+  /* 「align-items: center;」なので、縦方向に中央揃え */
+  align-items: center;
+}
+
+.header-name a {
+  font-size: 16px;
+  color: #FAFAFA;
+  /* 「text-decoration: none」とは、文字のアンダーラインを消す役割 */
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
 }
 
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  /* overflowプロパティとは、親要素の範囲から子要素がはみ出た時に、どのように表示するのかを設定するプロパティ */
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
 }
 
 .chat {
