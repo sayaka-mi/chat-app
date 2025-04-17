@@ -1,0 +1,165 @@
+.wrapper {
+  /* 要素を横並びに */
+  display: flex;
+}
+
+.side-bar {
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+}
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  /* 2つの要素の間隔（space-between）を等間隔 */
+  justify-content: space-between;
+  /* 「align-items: center;」なので、縦方向に中央揃え */
+  align-items: center;
+}
+
+.header-name a {
+  font-size: 16px;
+  color: #FAFAFA;
+  /* 「text-decoration: none」とは、文字のアンダーラインを消す役割 */
+  text-decoration: none;
+}
+
+.create-room a {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.rooms {
+  background-color: #2F3E51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  /* overflowプロパティとは、親要素の範囲から子要素がはみ出た時に、どのように表示するのかを設定するプロパティ */
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.chat {
+  background-color: #FFFFFF;
+  /* calcという名前の関数は、一般的には「計算（calculate）」を行うために作られるカスタム関数 */
+  width: calc(100vw - 300px);
+}
+
+.chat-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  color: darkred;
+  border: 1px solid darkred;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.messages {
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
+  /* ◯px ◯px ◯px は（上）px（左右）px（下）pxに適応 */
+  padding: 46px 40px 0;
+  /* overflowプロパティとは、親要素の範囲から子要素がはみ出た時に、どのように表示するのかを設定するプロパティのこと */
+  overflow: scroll;
+}
+
+.message {
+  margin: 10px 0 0 0;
+}
+
+.upper-message {
+  display: flex;
+}
+
+.message-user {
+  font-size: 16px;
+  color: #434A54;
+}
+
+.message-date {
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  font-size: 14px;
+  color: #434A54;
+  margin-bottom: 40px;
+}
+
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  font-size: 16px;
+  color: white;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
