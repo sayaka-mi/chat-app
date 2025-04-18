@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # ルートパスへのアクセスがあったら、messages_controllerのindexアクションが呼び出されるようにします。
   root to: "messages#index"
   resources :users, only: [:edit, :update]
+  resources :rooms, only: [:new, :create]
 end
