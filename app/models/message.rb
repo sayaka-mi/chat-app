@@ -7,6 +7,10 @@ class Message < ApplicationRecord
   # messagesテーブルにカラムを追加する必要はない
 
 
-  validates :content, presence: true
+  validates :content, presence: true, unless: :was_attached?
   # 空の場合はDBに保存しない
+
+  def was_attached?
+    self.image.attached?
+  end
 end
